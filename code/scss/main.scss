@@ -1,0 +1,102 @@
+@import "compass";
+@import "compass/reset";
+
+$width: 960px;
+$bar-height: 50px;
+$font-stack: helvetica, sans-serif;
+$black: #110800;
+$white: #ddd;
+
+header, section, footer {
+	width:100%;
+	min-width: $width;
+	//border: 2px white dashed;
+
+	.container {
+		height: auto;
+		margin: 0 auto;
+		position: relative;
+	}
+}
+
+header {
+	background-color: $black;
+	color: $white;
+	position: fixed;
+	z-index: 10;
+	top:0;
+	height: $bar-height;
+	width:100%;
+	border-bottom: 2px $black + #220 solid;
+
+	.container {
+		height: $bar-height;
+		width: $width;
+
+		ul {
+			display: inline-block;
+			float: right;
+			vertical-align: middle;
+			line-height: $bar-height;
+			li {
+				vertical-align: middle;
+				width: 200px;
+				display: inline-block;
+				text-align:center;
+			}
+		}
+	}
+}
+
+#main {
+	position: relative;
+	margin: $bar-height 0 0 0;
+	height:auto;
+	display:block;
+	width: 100%;
+	font-family: $font-stack;
+	line-height: 30px;
+	font-size: 22px;
+
+	section {
+		min-height: 1000px;
+		position: relative;
+
+		.container {
+			width: $width - 2 * 20px;
+			padding: 20px;
+		}
+	}
+
+	section#section1 {
+		background-color: #c22;
+		color: $black;
+	}
+
+	section#section2 {
+		background-color: $black;
+		color: $white;
+	}
+
+	section#section3 {
+		background-color: #3a3;
+		color: $black;
+	}
+}
+
+footer {
+	background-color: $black;
+	color: $white;
+	height: 50px;
+	line-height: 50px;
+	color: $white;
+	font-family: $font-stack;
+	text-align:center;
+	vertical-align: middle;
+
+	.container {
+		height: 50px;
+	}
+}
+
+
