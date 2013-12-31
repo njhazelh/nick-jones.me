@@ -1,6 +1,30 @@
 @import "compass";
 @import "compass/reset";
 
+$black: #210805;
+$white: #eee;
+$font-stack: helvetica, sans-serif;
+
+h1 {
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+h4 {
+	font-size: 1.25em;
+}
+
+p {
+
+}
 
 
 /*
@@ -8,8 +32,104 @@
  * 0 - 529px
  */
 @media only screen and (max-width: 529px) {
-	* {
-		background-color: cyan;
+	$width: 100%;
+	$font-size: 18px;
+
+	header, section, footer {
+		width: $width;
+		background-color:cyan;
+		font-family: $font-stack;
+		font-size: $font-size;
+
+		.container {
+			width: $width;
+			position: relative;
+		}
+	}
+
+	header {
+		position:fixed;
+		visibility: hidden;
+	}
+
+	section {
+		min-height: 200px;
+		padding: 50px 0;
+		position: relative;
+
+		p {
+			line-height: 1.5em;
+			letter-spacing: .025em;
+			word-spacing: .1em;
+			margin: 2em 1em;
+			text-indent: 3em;
+		}
+
+		&#section1 {
+			background-color: #c22;
+			color: $black;
+
+			img {
+				width: 70%;
+				position: relative;
+				margin: 0 auto;
+				display: block;
+			}
+
+			#info {
+				position: relative;
+				width: 70%;
+				margin: 0 auto;
+
+				#name {
+					text-align: center;
+				}
+
+				#occupation {
+					text-align: center;
+				}
+
+				ul#icons {
+					width: 100%;
+					position: relative;
+					margin: 10px 0;
+					text-align: center;
+
+					li {
+						display: inline-block;
+						width: 31%;
+						text-align: center;
+					}
+				}
+			}
+		}
+
+		&#section2 {
+			background-color: $white;
+			color: $black;
+		}
+
+		&#section3 {
+			background-color: #3a3;
+			color: $black;
+		}
+	}
+
+	footer {
+		background-color: $black;
+		color: $white;
+		text-align: center;
+		word-break: normal;
+		//height: 50px;
+		padding: 20px 0;
+
+		& * {
+			position: relative;
+			display: inline-block;
+			min-width: 70%;
+			height: auto;
+			margin: 10px 0;
+		}
 	}
 }
 
@@ -46,15 +166,11 @@
 @media only screen and (min-width: 960px) {
 	$width: 960px;
 	$bar-height: 50px;
-	$font-stack: helvetica, sans-serif;
-	$black: #110800;
-	$white: #eee;
 
 	header, section, footer {
 		width:100%;
 		min-width: $width;
 		font-family: $font-stack;
-		border: 2px yellow dashed;
 
 		.container {
 			height: auto;
@@ -100,14 +216,20 @@
 		height:auto;
 		display:block;
 		width: 100%;
-		font-family: $font-stack;
-		line-height: 30px;
-		font-size: 22px;
 
 		section {
-			min-height: 800px;
-			padding: 100px 0;
+			min-height: 200px;
+			padding: 200px 0;
 			position: relative;
+
+			p {
+				line-height: 2em;
+				text-indent: 3em;
+				letter-spacing: .015em;
+				margin: 50px 0;
+				font-family: $font-stack;
+				font-size: 22px;
+			}
 
 			&#section1 {
 				background-color: #c22;
@@ -129,15 +251,17 @@
 	footer {
 		background-color: $black;
 		color: $white;
-		height: 50px;
-		line-height: 50px;
-		color: $white;
-		font-family: $font-stack;
 		text-align:center;
 		vertical-align: middle;
+		padding: 10px 0;
 
 		.container {
-			height: 50px;
+			& * {
+				display: inline-block;
+				position: relative;
+				margin: 10px 10px;
+				height: auto;
+			}
 		}
 	}
 }
