@@ -1,1 +1,141 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}html{line-height:1}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}q,blockquote{quotes:none}q:before,q:after,blockquote:before,blockquote:after{content:"";content:none}a img{border:none}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}header,section,footer{width:100%;min-width:960px}header .container,section .container,footer .container{height:auto;margin:0 auto;position:relative}header{background-color:#110800;color:#ddd;position:fixed;z-index:10;top:0;height:50px;width:100%;border-bottom:2px #332a00 solid}header .container{height:50px;width:960px}header .container ul{display:inline-block;float:right;vertical-align:middle;line-height:50px}header .container ul li{vertical-align:middle;width:200px;display:inline-block;text-align:center}#main{position:relative;margin:50px 0 0 0;height:auto;display:block;width:100%;font-family:helvetica,sans-serif;line-height:30px;font-size:22px}#main section{min-height:1000px;position:relative}#main section .container{width:920px;padding:20px}#main section#section1{background-color:#c22;color:#110800}#main section#section2{background-color:#110800;color:#ddd}#main section#section3{background-color:#3a3;color:#110800}footer{background-color:#110800;color:#ddd;height:50px;line-height:50px;color:#ddd;font-family:helvetica,sans-serif;text-align:center;vertical-align:middle}footer .container{height:50px}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/*
+ * Mobile
+ * 0 - 529px
+ */
+@media only screen and (max-width: 529px) {
+  * {
+    background-color: cyan; } }
+/*
+ * Tablet
+ * 530px - 699px
+ */
+@media only screen and (min-width: 530px) and (max-width: 699px) {
+  * {
+    background-color: pink; } }
+/*
+ * Low Res Computer
+ * 700px - 959px
+ */
+@media only screen and (min-width: 700px) and (max-width: 959px) {
+  * {
+    background-color: orange; } }
+/*
+ * High res computer
+ * 960px
+ */
+@media only screen and (min-width: 960px) {
+  header, section, footer {
+    width: 100%;
+    min-width: 960px;
+    font-family: helvetica, sans-serif;
+    border: 2px yellow dashed; }
+    header .container, section .container, footer .container {
+      height: auto;
+      margin: 0 auto;
+      width: 960px;
+      position: relative; }
+
+  header {
+    background-color: #110800;
+    color: #eeeeee;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    border-bottom: 2px #332a00 solid; }
+    header .container {
+      height: 50px;
+      width: 960px; }
+      header .container ul {
+        display: inline-block;
+        float: right;
+        vertical-align: middle;
+        line-height: 50px; }
+        header .container ul li {
+          vertical-align: middle;
+          width: 200px;
+          display: inline-block;
+          text-align: center; }
+
+  #main {
+    position: relative;
+    margin: 50px 0 0 0;
+    height: auto;
+    display: block;
+    width: 100%;
+    font-family: helvetica, sans-serif;
+    line-height: 30px;
+    font-size: 22px; }
+    #main section {
+      min-height: 800px;
+      padding: 100px 0;
+      position: relative; }
+      #main section#section1 {
+        background-color: #c22;
+        color: #110800; }
+      #main section#section2 {
+        background-color: #eeeeee;
+        color: #110800; }
+      #main section#section3 {
+        background-color: #3a3;
+        color: #110800; }
+
+  footer {
+    background-color: #110800;
+    color: #eeeeee;
+    height: 50px;
+    line-height: 50px;
+    color: #eeeeee;
+    font-family: helvetica, sans-serif;
+    text-align: center;
+    vertical-align: middle; }
+    footer .container {
+      height: 50px; } }

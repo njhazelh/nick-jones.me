@@ -3,11 +3,11 @@
 %html
 	%head
 		%title Nick Jones
-		%link{ :rel => "Stylesheet", :href => "css/main.css"}
+		%link{ :rel => "stylesheet", :href => "/css/main.css" }
+		%meta{ :name => "viewport", :content => "width=device-width, initial-scale=1" }
 	%body
 		%header
 			.container
-				Welcome
 				%ul
 					%li
 						item 1
@@ -18,7 +18,8 @@
 		#main
 			%section#section1
 				.container
-					section1
+					%img{ :src => "/imgs/me.jpg", :alt => "Me"}
+					Nick Jones
 			%section#section2
 				.container
 					section2
@@ -27,4 +28,4 @@
 					section3
 		%footer
 			.container
-				© Nicholas Jones | #{Time.now}
+				© Nicholas Jones  |  #{Time.now}

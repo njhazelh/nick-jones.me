@@ -1,102 +1,144 @@
 @import "compass";
 @import "compass/reset";
 
-$width: 960px;
-$bar-height: 50px;
-$font-stack: helvetica, sans-serif;
-$black: #110800;
-$white: #ddd;
 
-header, section, footer {
-	width:100%;
-	min-width: $width;
-	//border: 2px white dashed;
 
-	.container {
-		height: auto;
-		margin: 0 auto;
-		position: relative;
+/*
+ * Mobile
+ * 0 - 529px
+ */
+@media only screen and (max-width: 529px) {
+	* {
+		background-color: cyan;
 	}
 }
 
-header {
-	background-color: $black;
-	color: $white;
-	position: fixed;
-	z-index: 10;
-	top:0;
-	height: $bar-height;
-	width:100%;
-	border-bottom: 2px $black + #220 solid;
 
-	.container {
+
+/*
+ * Tablet
+ * 530px - 699px
+ */
+@media only screen and (min-width: 530px) and (max-width: 699px) {
+	* {
+		background-color: pink;
+	}
+}
+
+
+
+/*
+ * Low Res Computer
+ * 700px - 959px
+ */
+@media only screen and (min-width: 700px) and (max-width: 959px) {
+	* {
+		background-color: orange;
+	}
+}
+
+
+
+/*
+ * High res computer
+ * 960px
+ */
+@media only screen and (min-width: 960px) {
+	$width: 960px;
+	$bar-height: 50px;
+	$font-stack: helvetica, sans-serif;
+	$black: #110800;
+	$white: #eee;
+
+	header, section, footer {
+		width:100%;
+		min-width: $width;
+		font-family: $font-stack;
+		border: 2px yellow dashed;
+
+		.container {
+			height: auto;
+			margin: 0 auto;
+			width: $width;
+			position: relative;
+		}
+	}
+
+	header {
+		background-color: $black;
+		color: $white;
+		position: fixed;
+		z-index: 10;
+		top:0;
 		height: $bar-height;
-		width: $width;
+		width:100%;
+		border-bottom: 2px $black + #220 solid;
 
-		ul {
-			display: inline-block;
-			float: right;
-			vertical-align: middle;
-			line-height: $bar-height;
-			li {
-				vertical-align: middle;
-				width: 200px;
+		.container {
+			height: $bar-height;
+			width: $width;
+
+			ul {
 				display: inline-block;
-				text-align:center;
+				float: right;
+				vertical-align: middle;
+				line-height: $bar-height;
+
+				li {
+					vertical-align: middle;
+					width: 200px;
+					display: inline-block;
+					text-align:center;
+				}
 			}
 		}
 	}
-}
 
-#main {
-	position: relative;
-	margin: $bar-height 0 0 0;
-	height:auto;
-	display:block;
-	width: 100%;
-	font-family: $font-stack;
-	line-height: 30px;
-	font-size: 22px;
-
-	section {
-		min-height: 1000px;
+	#main {
 		position: relative;
+		margin: $bar-height 0 0 0;
+		height:auto;
+		display:block;
+		width: 100%;
+		font-family: $font-stack;
+		line-height: 30px;
+		font-size: 22px;
 
-		.container {
-			width: $width - 2 * 20px;
-			padding: 20px;
+		section {
+			min-height: 800px;
+			padding: 100px 0;
+			position: relative;
+
+			&#section1 {
+				background-color: #c22;
+				color: $black;
+			}
+
+			&#section2 {
+				background-color: $white;
+				color: $black;
+			}
+
+			&#section3 {
+				background-color: #3a3;
+				color: $black;
+			}
 		}
 	}
 
-	section#section1 {
-		background-color: #c22;
-		color: $black;
-	}
-
-	section#section2 {
+	footer {
 		background-color: $black;
 		color: $white;
-	}
-
-	section#section3 {
-		background-color: #3a3;
-		color: $black;
-	}
-}
-
-footer {
-	background-color: $black;
-	color: $white;
-	height: 50px;
-	line-height: 50px;
-	color: $white;
-	font-family: $font-stack;
-	text-align:center;
-	vertical-align: middle;
-
-	.container {
 		height: 50px;
+		line-height: 50px;
+		color: $white;
+		font-family: $font-stack;
+		text-align:center;
+		vertical-align: middle;
+
+		.container {
+			height: 50px;
+		}
 	}
 }
-
 
