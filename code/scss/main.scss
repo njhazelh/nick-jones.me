@@ -26,14 +26,38 @@ p {
 
 }
 
+#building {
+	position: fixed;
+	color: yellow;
+	z-index: 20;
+	margin: 0 auto;
+	top: 0px;
+	left: 0px;
+	height: 30px;
+	padding: 10px;
+	line-height: 30px;
+	vertical-align: middle;
+	font-size: 1.5em;
+	font-family: $font-stack;
+	text-transform: uppercase;
+}
 
 /*
  * Mobile
  * 0 - 529px
  */
-@media only screen and (max-width: 529px) {
+@media only screen and (max-width: 650px) {
 	$width: 100%;
 	$font-size: 18px;
+
+	img {
+		margin: 0 auto;
+		display: block;
+	}
+
+	.clear {
+		visibility: hidden;
+	}
 
 	header, section, footer {
 		width: $width;
@@ -139,25 +163,11 @@ p {
  * Tablet
  * 530px - 699px
  */
-@media only screen and (min-width: 530px) and (max-width: 699px) {
+@media only screen and (min-width: 651px) and (max-width: 959px) {
 	* {
 		background-color: pink;
 	}
 }
-
-
-
-/*
- * Low Res Computer
- * 700px - 959px
- */
-@media only screen and (min-width: 700px) and (max-width: 959px) {
-	* {
-		background-color: orange;
-	}
-}
-
-
 
 /*
  * High res computer
@@ -166,6 +176,15 @@ p {
 @media only screen and (min-width: 960px) {
 	$width: 960px;
 	$bar-height: 50px;
+
+	img {
+		float: left;
+		margin: 20px;
+	}
+
+	.clear {
+		clear: both;
+	}
 
 	header, section, footer {
 		width:100%;
@@ -218,8 +237,8 @@ p {
 		width: 100%;
 
 		section {
-			min-height: 200px;
-			padding: 200px 0;
+			min-height: 100px;
+			padding: 250px 0;
 			position: relative;
 
 			p {
