@@ -25,30 +25,84 @@
 		#main
 			%section#section1
 				.container
-					%img{ :src => "/imgs/me.jpg", :alt => "Me"}
-					%br
-					#info
-						%h1#name Nick Jones
-						%h3#occupation Software Engineer
-						%ul#icons
-							%li 1
-							%li 2
-							%li 3
+					#bioLeft
+						%img#me{ :src => "/imgs/me.jpg", :alt => "Me"}
+						.clear
+						#info
+							%h1#name Nick Jones
+							%h3#occupation Software Engineer (In Training)
+							%ul#icons
+								%li
+									%a{ :href => "https://github.com/njhazelh", :target => "_blank"}
+										%img{ :src => "/imgs/GitHub-Mark-32px.png", :alt => "Github", :width => "32px", :height => "32px"}
+								%li
+									%a{ :href => "http://www.linkedin.com/pub/nicholas-jones/67/3a3/396", :target => "_blank"}
+										%img{ :src => "/imgs/LinkedIn-InBug-2CRev.png", :alt => "LinkedIn", :width => "32px", :height => "32px"}
+					#bioRight
+						%p
+							I have loved computers for as long as I could click a mouse (I remember playing Civilization II before I could even read.)  Throughout school, I attended Flash summer camps, tried web design, built computers, and desperately tried to learn how to program.
+						%p
+							In my Junior year of high school, I decided to take AP Computer Science.  I would call it one of the best decisions that I've ever made.  After realizing that coding was more play than work, I decided that when I went to college, I would be a Computer Scientist.
+						%p
+							These days, I am a sophomore at Northeastern University studying Computer Science with a Focus in Cyber Operations (Security).  I tutor the Fundamentals I CS class, and plan to fill as much time as possible with AI, robotics, and Computer Vision.  Call me mad, but I'd really like to work on space robots.
 				.clear
 			%section#section2
 				.container
-					%img{ :src => "/imgs/me.jpg", :alt => "Me"}
-					%p
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut semper enim. Sed et orci rhoncus, pulvinar turpis sit amet, facilisis urna. Etiam nulla nisi, viverra sed vestibulum eu, feugiat vel leo. Pellentesque imperdiet lacinia quam, at vehicula massa varius vitae. In turpis enim, mattis ac purus et, ultrices pulvinar lectus. In hac habitasse platea dictumst. Praesent ligula lectus, interdum vel sodales at, sollicitudin non turpis. Quisque at interdum quam. Donec vitae ipsum condimentum, tincidunt turpis et, scelerisque est. In interdum magna metus, at mollis risus venenatis varius. Phasellus egestas risus at tortor pharetra interdum. Fusce quis felis ac est vehicula blandit. Nulla dolor sem, volutpat non libero in, volutpat commodo arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam rhoncus pulvinar mauris, nec sollicitudin risus consectetur in. Praesent consectetur commodo dui et tempor.
-					%p
-						Nullam in tortor ac enim condimentum laoreet. Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse luctus est mauris, vitae ullamcorper justo dignissim ut. Etiam in imperdiet massa. Duis id lacus sed dolor gravida malesuada ut eu nibh. Phasellus dignissim orci quis ante gravida, ut scelerisque mi pharetra. Pellentesque neque nunc, pulvinar eu elit in, fermentum consectetur dui.
-					.clear
+					%h2 Projects
+					%ul
+						%li Stuff
 			%section#section3
 				.container
-					%p
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut semper enim. Sed et orci rhoncus, pulvinar turpis sit amet, facilisis urna. Etiam nulla nisi, viverra sed vestibulum eu, feugiat vel leo. Pellentesque imperdiet lacinia quam, at vehicula massa varius vitae. In turpis enim, mattis ac purus et, ultrices pulvinar lectus. In hac habitasse platea dictumst. Praesent ligula lectus, interdum vel sodales at, sollicitudin non turpis. Quisque at interdum quam. Donec vitae ipsum condimentum, tincidunt turpis et, scelerisque est. In interdum magna metus, at mollis risus venenatis varius. Phasellus egestas risus at tortor pharetra interdum. Fusce quis felis ac est vehicula blandit. Nulla dolor sem, volutpat non libero in, volutpat commodo arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam rhoncus pulvinar mauris, nec sollicitudin risus consectetur in. Praesent consectetur commodo dui et tempor.
-					%p
-						Nullam in tortor ac enim condimentum laoreet. Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse luctus est mauris, vitae ullamcorper justo dignissim ut. Etiam in imperdiet massa. Duis id lacus sed dolor gravida malesuada ut eu nibh. Phasellus dignissim orci quis ante gravida, ut scelerisque mi pharetra. Pellentesque neque nunc, pulvinar eu elit in, fermentum consectetur dui.
+					%h2 Work
+					%ul
+						%li
+							%h3 Fundamental CS I Tutor
+							%p Bad code everywhere!
+						%li
+							%h3 MathPower Tutor
+							%p Helping the children!
+						%li
+							%h3 Lifeguard
+							%p Desperately trying to stop people killing themselves.
+					.clear
+			%section#section4
+				.container
+					%h2 Awards
+					%ul
+						%li
+							Dean's List 3 Semesters Running
+						%li
+							Eagle Scout
+						%li
+							1st Dan Black Belt in Tang Soo Do
+						%li
+							Top 10 at PA FBLA in Computer Related Fields
+							%ul.dots
+								%li 7th - Cyber Security
+								%li 5th - Technology Concepts
+								%li 1st - The Internet
+								%li 6th - E-Business
+			%section#section5
+				.container
+					%h2 Hobbies
+					%ul.plain
+						%li
+							%h3 Skiing
+							%p
+								skiing stuff
+						%li
+							%h3 Martial Art
+							%p
+								Martial Art Stuff
+						%li
+							%h3 Manga/Anime
+							%p
+								Manga/Anime Stuff
+						%li
+							%h3 Programming
+							%p
+								Programming Stuff
+
 		%footer
 			.container
 				#copyright &copy; Nicholas Jones
