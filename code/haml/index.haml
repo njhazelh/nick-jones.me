@@ -9,7 +9,6 @@
 		%meta{ :name => "description", :content => "My Resume"}
 		%meta{ :name => "keywords", :content => "Computer Science, CS, Nick Jones, Jones, Resume"}
 		%meta{ :name => "author", :content => "Nick Jones"}
-
 	%body
 		%header
 			.container
@@ -24,7 +23,7 @@
 			%section#section1
 				.container
 					#bioLeft
-						%img#me{ :src => "/imgs/me.jpg", :alt => "Me"}
+						%img#me{ :src => "/imgs/me.jpg", :alt => "Me", :width => "320", :height => "437"}
 						.clear
 						#info
 							%h1#name
@@ -105,5 +104,7 @@
 
 		%footer
 			.container
-				#copyright &copy; Nicholas Jones
-				#editDate #{Time.now}
+				#copyright
+					&copy; Nicholas Jones
+				#editDate
+					#{Time.now}
