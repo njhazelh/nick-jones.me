@@ -1,0 +1,97 @@
+$icon-font-path: '../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/';
+
+// bower:scss
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+i {
+  &:nth-of-type(1) {
+    color: #ff5b5b;
+    text-shadow: -1px -1px #544;
+  }
+
+  &:nth-of-type(2) {
+    color: #57bfff;
+    text-shadow: -1px -1px #445;
+  }
+}
+
+.page {
+  min-width: 500px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url("../images/mountain.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.fade-box {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(50, 60, 40, .2);
+  display: flex;
+}
+
+.content-box {
+  flex: 0 0 auto;
+  margin: auto;
+  width: 1000px;
+  height: 500px;
+  position: relative;
+}
+
+.content-right {
+    padding-left: 50px;
+}
+
+.hello {
+  color: white;
+
+  b {
+    color: #FFF266;
+  }
+}
+
+.bio {
+  font-size: 18px;
+  line-height: 30px;
+  color: #FCFFD5;
+  padding-top: 30px;
+}
+
+.site-nav {
+  position: relative;
+  padding-top: 30px;
+
+  li a {
+    margin-right: 10px;
+    color: #cacaab;
+    background-color: rgba(80, 87, 73, .66);
+    border-color: #6d736c;
+  }
+}
+
+.my-pic {
+  width: 100%;
+  border: 1px solid #A8A89F;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  color: #343;
+}
