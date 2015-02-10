@@ -1,14 +1,25 @@
-nick-jones.me
-=============
+[![Build Status](https://travis-ci.org/njhazelh/nick-jones.me.svg)](https://travis-ci.org/njhazelh/nick-jones.me)
 
-*nick-jones.me* is the most recent web design project that I have decided to build(12/30/2013).  Having done a lot of complicated, yet poor quality code in php, I've decided that I want to learn Ruby on Rails.  Additionally, I think it's a good time that I learned some frameworks, so this project will incorporate both HAML and SASS scripting.  Furthermore, I've wanted to design a reponsive layout for a while, so that will be another part of this project.
+#nick-jones.me
+nick-jones.me is my personal website.  It's been rather simple for a while, but
+the plan is to much more power to it.  
 
-*nick-jones.me* will be a personal web site offering a little information about me for employers and such.  I intend to keep it as light as possible, and not get too involved in the server side scripting.
+##Architecture
+###Frontend
+- Backbone
+- SCSS
+- HTML
+- Gulp
+- JavaScript (ES6?)
+###Backend
+- Java
+- SpringBoot
+- Gradle
 
-TL;DR
------
-- Resume Site
-- Down with PHP, long live Ruby
-- HAML
-- SASS
-- Responsive Design
+##Build
+To build just run `gulp` in the project directory.  This will require that
+you have nodejs, and gulp installed. SCSS also needs to be installed via the
+ruby gem.
+
+###Continuous Integration
+This project uses Travis.
