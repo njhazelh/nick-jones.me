@@ -3,6 +3,7 @@ $icon-font-path: '../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+@import "octicons/octicons.scss";
 
 html, body {
   width: 100vw;
@@ -71,16 +72,27 @@ i {
   padding-top: 30px;
 }
 
-.site-nav {
-  position: relative;
-  padding-top: 30px;
+.links {
+  font-size: 18px;
+  line-height: 30px;
+  padding: 20px  0 0 20px;
+  display: flex;
+  position: absolute;
 
-  li a {
-    margin-right: 10px;
-    color: #cacaab;
-    background-color: rgba(80, 87, 73, .66);
-    border-color: #6d736c;
+  a {
+    color: white;
+    display: block;
   }
+
+  a::hover {
+    color: red;
+    filter: drop-shadow(5px 5px 10px black);
+    -webkit-filter: drop-shadow(5px 5px 10px black);
+  }
+}
+
+.linkedin {
+  width: 100px;
 }
 
 .my-pic {
