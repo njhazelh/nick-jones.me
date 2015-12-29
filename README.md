@@ -11,14 +11,12 @@ the plan is to much more power to it.
 - JavaScript (ES6?)
 
 ###Backend
-- Java
-- SpringBoot
-- Gradle
+Something, when I get around to it.  Maybe Flask. Maybe Haskell.
 
 ##Build
 To build just run `gulp` in the project directory.  This will require that
-you have nodejs, and gulp installed. SCSS also needs to be installed via the
-ruby gem.
+you have nodejs v0.12, and gulp installed. SCSS also needs to be installed via the
+ruby gem.  See `.travis.yml` for hints.
 
 ###Continuous Integration
 This project uses Travis.
