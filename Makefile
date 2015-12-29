@@ -3,7 +3,7 @@ default: build
 build:
 	gulp build
 
-docker:
+docker: build
 	docker build -t nick-jones.me .
 
 run: build docker
