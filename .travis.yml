@@ -7,11 +7,3 @@ before_script:
   - npm install -g bower
   - bower install
 script: gulp
-
-env:
-  global:
-    - secure: "g0kx1Mwhf3ToKRt4vPs4tqnzUwV8SQ1zWsD/dye4+GQ4BpAyg9cMTbam5frqUJXL0Ek2s60iG1Kl1nW6RXX0vvPFOhjx8/mkCihtzeLIkyYZI0ZKrzQwudAv/6BGWm7ZKPRfmu4H7B4y3I22VoZYHCsSf5h8SKn8dO6eMrFxvUc="
-    - secure: "M4ZVJy2ysG09IoVuhtZL2nccOj1h/JVyKXFcMD1QrZOD1yLaknM1KFaQ3ijl/wnli2+ZO9BkXXaS9d0ilRCzxHww8gIXAJoBEuNsIdh2DUouIFmN624y042hrPZnmC5V6m6Ei2ngbQ6KV9ey73zsYGq/feCTUvpI3JcTlNifo6c="
-after_success:
-  - cd dist
-  - find . -type f -exec curl --user $FTP_USER:$FTP_PASSWORD --ftp-create-dirs -T {} ftp://nick-jones.me/public_html/{} \;
