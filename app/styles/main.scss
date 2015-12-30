@@ -63,6 +63,10 @@ i {
   line-height: 30px;
   color: #FCFFD5;
   padding-top: 30px;
+
+  p {
+    color: #C8E2CF;
+  }
 }
 
 .links {
@@ -90,7 +94,6 @@ i {
 }
 
 .my-pic {
-  width: 100%;
   border: 1px solid #A8A89F;
   border-radius: 20%;
 }
@@ -110,11 +113,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .page {
-    //background: #585;
-  }
-
+@media screen and (max-width: 600px) {
   .fade-box {
     flex-direction: column;
     align-items: center;
@@ -138,10 +137,6 @@ footer {
     align-items: center;
   }
 
-  .row {
-    flex-direction: column;
-  }
-
   .my-pic {
     width: 60%;
     position: relative;
@@ -149,10 +144,48 @@ footer {
 
   .bio {
     margin: 0 20px;
+  }
+}
 
-    p {
-      color: #C8E2CF;
-    }
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+  .fade-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-box {
+    flex-direction: row;
+    order: 0;
+    flex: 1 1 auto;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0 10px;
+  }
+
+  .bio {
+    margin: 0 0 0 20px;
+  }
+
+  .my-pic {
+    width: 200px;
+  }
+
+  .links {
+    order: 1;
+    flex: 1 1 auto;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    margin: 5px;
+    justify-content: space-around;
+  }
+
+  footer {
+    order: 2;
   }
 }
 
