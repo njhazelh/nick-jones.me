@@ -1,4 +1,4 @@
-#nick-jones.me [![Build Status](https://travis-ci.org/njhazelh/nick-jones.me.svg)](https://travis-ci.org/njhazelh/nick-jones.me)
+#nick-jones.me [![Build Status](https://travis-ci.org/njhazelh/nick-jones.me.svg?branch=master)](https://travis-ci.org/njhazelh/nick-jones.me.svg?branch=master)
 nick-jones.me is my personal website.  It's been rather simple for a while, but
 the plan is to much more power to it.
 
