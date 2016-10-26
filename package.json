@@ -2,11 +2,43 @@
   "name": "nick-jones.me",
   "version": "1.0.0",
   "description": "My personal website.",
-  "main": "index.js",
   "repository": {
     "url": "git@github.com:njhazelh/nick-jones.me.git",
     "type": "git"
   },
   "author": "Nick Jones <njhazelh@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "bootstrap": "^3.3.7",
+    "clean-webpack-plugin": "^0.1.13",
+    "css-loader": "^0.25.0",
+    "eslint": "^3.8.1",
+    "eslint-loader": "^1.6.0",
+    "eslint-plugin-react": "^6.4.1",
+    "file-loader": "^0.9.0",
+    "hash-change": "^0.1.0",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.22.0",
+    "react": "^15.3.2",
+    "react-bootstrap": "^0.30.5",
+    "react-dom": "^15.3.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "scripts": {
+    "lint": "eslint",
+    "build": "webpack -d --color --progress --devtool sourcemap",
+    "build-prod": "webpack --optimize-minimize",
+    "watch": "webpack-dev-server --colors --host 0.0.0.0 --content-base dist --devtool sourcemap  --progress -d"
+  },
+  "devDependencies": {
+    "eslint": "^3.8.1",
+    "eslint-plugin-react": "^6.4.1"
+  }
 }
