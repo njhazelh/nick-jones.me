@@ -1,0 +1,46 @@
+.jumbotron {
+  background-color: #333;
+  background-size: cover;
+  min-height: 90vh;
+  color: #ccc;
+  position: relative;
+}
+
+.jumbotron_text {
+  bottom: 0;
+  right: 0;
+}
+
+.jumbotron_text .btn {
+  margin-left: 40px;
+  margin-right: 10px;
+  width: 100px;
+}
+
+.img_jumbo {
+  background-image: url("../imgs/mountains.jpg");
+  background-position: center;
+  min-height: 400px;
+}
+
+.welcome {
+  font-size: 12em;
+  text-align: right;
+  color: #fa2;
+  font-family: Ostrich Sans Inline, Ostrich Sans, sans-serif;
+}
+
+section {
+  min-height: 300px;
+  padding: 50px;
+}
+
+footer {
+  background-color: #333;
+  color: #ccc;
+  width: 100%;
+  min-height: 100px;
+  position: relative;
+  padding: 50px;
+  text-align: center;
+}

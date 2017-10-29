@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: Ostrich Sans;
+}
+
+h2 {
+  font-family: Ostrich Sans;
+  font-weight: 900;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: roboto, sans-serif;
+  font-size: 1.2em;
+}
