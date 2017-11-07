@@ -15,7 +15,6 @@ class App extends Component {
                 </Col>
               </Row>
               <Row>
-                <Col></Col>
                 <Col style={{display: 'flex', justifyContent: 'flex-end'}}>
                   <Button color="primary" href="https://www.linkedin.com/in/njhazelh/">LinkedIn</Button>
                   <Button color="primary" href="https://github.com/njhazelh">Github</Button>
@@ -29,27 +28,91 @@ class App extends Component {
         <Container>
           <h2>Who is Nick Jones?</h2>
           <p>
-          Nick Jones is a young software developer working in silicon valley. Lots of bullshit about being an awesome developer and stuff. I have Lots
-          of awesome skills and tons of drive so you should hire me and give me lots of money.
+          Nick Jones is a talented, young software developer working in Silicon Valley.
+          After graduating Summa Cum Laude from Northeastern University in 2017,
+          he now works as a Software Engineer at Facebook HQ.  Nick has a range of full-stack
+          experience involving web/android development, distributed systems, networking,
+          machine-learning, and security.  He loves non-trivial problems where solid,
+          scalable engineering can blend with seamless user experience to change the way
+          we interact with the world.
           </p>
         </Container>
         </section>
-        <Jumbotron className="img_jumbo"></Jumbotron>
-        <section>
+        <Jumbotron className="img_jumbo">
+          <p style={{
+            position:'absolute',
+            bottom: 0,
+            right: 0,
+            margin: '5px 10px',
+            color: '#d0dbe5',
+            fontSize: '14px'
+          }}>The Black Mountains, Wales</p>
+        </Jumbotron>
+        <section className='resume'>
         <Container>
-          <h2>Where has Nick Worked?</h2>
-          <ul>
-            <li>Facebook</li>
-            <li>HubSpot</li>
-            <li>Clypd</li>
-            <li>Vecna</li>
-          </ul>
+          <Row>
+            <Col><h2>Work History</h2></Col>
+            <Col><Button color='primary' style={{float:'right'}}>Download Resume</Button></Col>
+          </Row>
+          <Row className='job'>
+            <Col className='role' xs='3'>
+              <span className='company'>Facebook</span><br/>
+              <span className='position'>Software Engineer</span>
+            </Col>
+            <Col className='job_description' xs='6'>
+              Working to develop communities and bring the world closer together.
+            </Col>
+            <Col className='job_duration' xs='3'>Aug 2017 - Present</Col>
+          </Row>
+          <Row className='job'>
+            <Col className='role' xs='3'>
+              <span className='company'>HubSpot</span><br/>
+              <span className='position'>Software Engineer Coop</span>
+            </Col>
+            <Col className='job_description' xs='6'>
+              Developed metrics and optimizations to maximize HBase availability across a
+              variety of workloads.
+            </Col>
+            <Col className='job_duration' xs='3'>Sept 2016 - Dec 2016</Col>
+          </Row>
+          <Row className='job'>
+            <Col className='role' xs='3'>
+              <span className='company'>Facebook</span><br/>
+              <span className='position'>Software Engineer Intern</span>
+            </Col>
+            <Col className='job_description' xs='6'>
+              Developed a code generation framework for ElasticSearch to increase
+              developer efficiency.
+            </Col>
+            <Col className='job_duration' xs='3'>May 2016 - Aug 2016</Col>
+          </Row>
+          <Row className='job'>
+            <Col className='role' xs='3'>
+              <span className='company'>Clypd</span><br/>
+              <span className='position'>Software Engineer Coop</span>
+            </Col>
+            <Col className='job_description' xs='6'>
+              Developed API infrastructure using Go, handled DevOps, optimized
+              memory allocation in simulated annealing algorithm
+            </Col>
+            <Col className='job_duration' xs='3'>July 2015 - Feb 2016</Col>
+          </Row>
+          <Row className='job'>
+            <Col className='role' xs='3'>
+              <span className='company'>Vecna</span><br/>
+              <span className='position'>Software Engineer Coop</span>
+            </Col>
+            <Col className='job_description' xs='6'>
+              Developed single page application in Backbone to remotely control robots.
+              Helped organize company standards on front-end development.  Implemented
+              websocket upgrades to improve robot-browser communication.
+            </Col>
+            <Col className='job_duration' xs='3'>June 2014 - Dec 2014</Col>
+          </Row>
         </Container>
         </section>
         <footer>
-          <Container>
-            <p>Nick Jones 2017</p>
-          </Container>
+            Nick Jones 2017
         </footer>
       </div>
     );

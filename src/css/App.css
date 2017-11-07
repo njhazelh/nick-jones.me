@@ -1,9 +1,10 @@
 .jumbotron {
   background-color: #333;
   background-size: cover;
-  min-height: 90vh;
+  min-height: 95vh;
   color: #ccc;
   position: relative;
+  margin-bottom: 0;
 }
 
 .jumbotron_text {
@@ -20,7 +21,7 @@
 .img_jumbo {
   background-image: url("../imgs/mountains.jpg");
   background-position: center;
-  min-height: 400px;
+  min-height: 700px;
 }
 
 .welcome {
@@ -28,19 +29,42 @@
   text-align: right;
   color: #fa2;
   font-family: Ostrich Sans Inline, Ostrich Sans, sans-serif;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.68);
+  margin-bottom: 4rem;
+  line-height: .5em;
+  height: .8em;
+}
+
+.resume .job {
+  margin: 0 -15px;
+  padding: 100px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.resume .company {
+  font-weight: bold;
+  color: var(--blue);
+}
+
+.resume .position {
+  font-style: italic;
+}
+
+.resume .job_duration {
+  text-align: right;
+  font-weight: 600;
 }
 
 section {
   min-height: 300px;
-  padding: 50px;
+  padding: 200px 0;
 }
 
 footer {
   background-color: #333;
-  color: #ccc;
+  color: #666;
   width: 100%;
-  min-height: 100px;
   position: relative;
-  padding: 50px;
+  padding: 100px 0;
   text-align: center;
 }
